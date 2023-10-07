@@ -1,0 +1,226 @@
+/*Strat Setting page*/
+
+/*Start Site Control*/
+.site-control textarea {
+    min-height: 170px;
+    resize: none;
+}
+
+/*End Site Control*/
+
+/*start General info*/
+.general-info .email {
+    display: inline-flex;
+    width: calc(100% - 80px);
+    cursor: not-allowed;
+    background-color: #f0f4f8;
+    color: #bbb;
+}
+
+/*End General info*/
+
+/*Start Security info*/
+/*End Security info*/
+
+/*Start Social info*/
+.social-control .social-box i {
+    width: 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    border-right: none;
+    border-radius: 6px 0 0 6px0;
+    -webkit-border-radius: 6px 0 0 6px;
+    -moz-border-radius: 6px 0 0 6px;
+    -ms-border-radius: 6px 0 0 6px;
+    -o-border-radius: 6px 0 0 6px;
+}
+
+.social-control .social-box input {
+    height: 40px;
+    background-color: #f6f6f6;
+    padding-left: 10px;
+    border-radius: 0 6px 6px 0;
+    -webkit-border-radius: 0 6px 6px 0;
+    -moz-border-radius: 0 6px 6px 0;
+    -ms-border-radius: 0 6px 6px 0;
+    -o-border-radius: 0 6px 6px 0;
+}
+
+.social-control .social-box:focus-within i {
+    color: #000;
+}
+
+/*End Social Info*/
+
+/*Start Widgets Control*/
+.widgets-control .control label {
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.widgets-control .control label::before,
+.widgets-control .control label::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.widgets-control .control input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.widgets-control .control label::before {
+    content: "";
+    border: 2px solid var(--grey-color);
+    width: 14px;
+    height: 14px;
+}
+
+.widgets-control .control label:hover::before {
+    border-color: var(--blue-alt-color);
+}
+
+.widgets-control .control label::after {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00c";
+    font-weight: 900;
+    background-color: var(--blue-color);
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--main-transition-time);
+    transform: scale(0) rotate(360deg);
+    -webkit-transform: scale(0) rotate(360deg);
+    -moz-transform: scale(0) rotate(360deg);
+    -ms-transform: scale(0) rotate(360deg);
+    -o-transform: scale(0) rotate(360deg);
+    -webkit-transition: var(--main-transition-time);
+    -moz-transition: var(--main-transition-time);
+    -ms-transition: var(--main-transition-time);
+    -o-transition: var(--main-transition-time);
+}
+
+.widgets-control .control input[type="checkbox"]:checked+label::after {
+    transform: scale(1) rotate(-360deg);
+    -webkit-transform: scale(1) rotate(-360deg);
+    -moz-transform: scale(1) rotate(-360deg);
+    -ms-transform: scale(1) rotate(-360deg);
+    -o-transform: scale(1) rotate(-360deg);
+}
+
+/*End Widgets Control*/
+
+/*Start Backup Manager*/
+
+.backup-control input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.backup-control .date label {
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.backup-control .date label::before,
+.backup-control .date label::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.backup-control .date label::before {
+    border: 2px solid var(--grey-color);
+    width: 18px;
+    height: 18px;
+    left: 0;
+    top: 50%;
+    margin-top: -11px;
+}
+
+.backup-control .date label:hover::before {
+    border-color: var(--blue-alt-color);
+}
+
+.backup-control .date label::after {
+    left: 5px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--blue-color);
+    transition: var(--main-transition-time);
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transition: var(--main-transition-time);
+    -moz-transition: var(--main-transition-time);
+    -ms-transition: var(--main-transition-time);
+    -o-transition: var(--main-transition-time);
+}
+
+.backup-control .date input[type="radio"]:checked+label::before {
+    border-color: var(--blue-color);
+}
+
+.backup-control .date input[type="radio"]:checked+label::after {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+
+.backup-control .servers {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    gap: 10px;
+}
+
+@media (max-width:767px) {
+    .backup-control .servers {
+        flex-direction: column;
+    }
+
+    .backup-control .servers .server {
+        width: 100%;
+    }
+}
+
+.backup-control .servers .server {
+    border: 2px solid #eee;
+    position: relative;
+    min-width: calc((100% - 60px)/3);
+}
+
+.backup-control .servers .server label {
+    cursor: pointer;
+}
+
+.backup-control .servers input[type="radio"]:checked+.server {
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+}
+
+/*End Backup Manager*/
+
+/*End Setting Page*/

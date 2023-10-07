@@ -1,0 +1,39 @@
+/*Start Courses*/
+.courses-page {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.courses-page .course {
+    overflow: hidden;
+}
+
+.courses-page .course .cover {
+    width: 100%;
+}
+
+.courses-page .course .instructor {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 20px;
+    left: 20px;
+    border: 2px solid white;
+}
+
+.courses-page .course .description {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.courses-page .course .info .title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    top: -12px;
+}
+
+/*End Cources*/

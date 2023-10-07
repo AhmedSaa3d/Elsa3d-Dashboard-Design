@@ -1,0 +1,68 @@
+/*Start Projects Page*/
+.project-page .project .date {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.project-page .project .team {
+    min-height: 60px;
+}
+
+.project-page .project .team a {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.project-page .project .team a:nth-child(2) {
+    left: 25px;
+}
+
+.project-page .project .team a:nth-child(3) {
+    left: 50px;
+}
+
+.project-page .project .team a:nth-child(4) {
+    left: 75px;
+}
+
+.project-page .project .team a:nth-child(5) {
+    left: 100px;
+}
+
+.project-page .project .team a:hover {
+    z-index: 1;
+}
+
+.project-page .project .team img {
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+}
+
+.project-page .project .tags {
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+@media (max-width:767px) {
+    .project-page .project .tags {
+        justify-content: center;
+    }
+}
+
+.project-page .project .prog {
+    height: 8px;
+    flex-basis: 50%;
+    position: relative;
+}
+
+.project-page .project .prog span {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+/*End Projects Page*/

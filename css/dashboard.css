@@ -1,0 +1,424 @@
+/*Start Dashboard Page*/
+
+/*Start Welcome Widget*/
+.welcome {
+    overflow: hidden;
+}
+
+.welcome .intro p {
+    text-align: center;
+}
+
+.welcome .intro img {
+    width: 170px;
+    margin-bottom: -10px;
+}
+
+.welcome .avatar {
+    width: 64px;
+    height: 64px;
+    border: 2px solid white;
+    padding: 2px;
+    box-shadow: 0 0 5px #ddd;
+    margin-left: 40px;
+    margin-top: -32px;
+}
+
+.welcome .body>div {
+    flex: 1;
+}
+
+.welcome .visit {
+    margin: 0 15px 15px auto;
+}
+
+@media (max-width: 767px) {
+    .welcome .intro {
+        padding-bottom: 30px;
+    }
+
+    .welcome .avatar {
+        margin-left: 0;
+    }
+
+    .welcome .body>div:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+/*End Welcome Widget*/
+
+/*Start Quick Draft*/
+.quick-draft textarea {
+    resize: none;
+    min-height: 200px;
+}
+
+.quick-draft .save {
+    margin-left: auto;
+}
+
+/*End Quick Draft*/
+
+/*Start Yearly Targets*/
+.targets .target-row .icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+@media (max-width:767px) {
+    .targets .target-row .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+.targets .details {
+    flex: 1;
+}
+
+.targets .details .progress {
+    height: 4px;
+}
+
+.targets .details .progress>span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+
+.targets .details .progress>span span {
+    position: absolute;
+    bottom: 16px;
+    right: -16px;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+
+.targets .details .progress>span span::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: transparent transparent transparent transparent;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.targets .details .progress .blue span::after {
+    border-top-color: var(--blue-color);
+}
+
+.targets .details .progress .orange span::after {
+    border-top-color: var(--orange-color);
+}
+
+.targets .details .progress .green span::after {
+    border-top-color: var(--green-color);
+}
+
+.blue .icon,
+.blue .progress {
+    background-color: rgb(0 117 255/ 20%);
+}
+
+.orange .icon,
+.orange .progress {
+    background-color: rgb(245 158 11 / 20%);
+}
+
+.green .icon,
+.green .progress {
+    background-color: rgb(34 197 94 / 20%);
+}
+
+/*End Yearly Targets*/
+
+/*start tickets widgets*/
+.tickets .box {
+    width: calc(50% - 10px);
+}
+
+@media (max-width:767px) {
+    .tickets .box {
+        width: 100%;
+    }
+}
+
+/*End tickets widgets*/
+
+/*Start Latest News*/
+.latest-news .news-row:not(:last-of-type) {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.latest-news .news-row img {
+    width: 100px;
+    margin-right: 15px;
+}
+
+.latest-news .news-row .info {
+    flex-grow: 1;
+}
+
+@media (max-width:767px) {
+    .latest-news .news-row .label {
+        margin: 10px auto;
+        width: fit-content;
+    }
+}
+
+/*End Latest News*/
+
+/*Start Latest Tasks*/
+.latest-tasks .task-row {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.latest-tasks .task-row .info {
+    flex-grow: 1;
+}
+
+.latest-tasks .done {
+    opacity: 0.3;
+}
+
+.latest-tasks .done h3,
+.latest-tasks .done p {
+    text-decoration: line-through;
+}
+
+.latest-tasks .task-row>i {
+    cursor: pointer;
+}
+
+.latest-tasks .task-row>i:hover {
+    color: var(--red-color);
+}
+
+/*End Latest Tasks*/
+
+/*Start Latest Uploads*/
+.latest-uploads ul li img {
+    width: 40px;
+    height: 40px;
+}
+
+/*End Latest Uploads*/
+
+/*Start Last Project*/
+.last-project ul::before {
+    content: "";
+    position: absolute;
+    left: 11px;
+    width: 2px;
+    height: 100%;
+    background-color: var(--blue-color);
+}
+
+.last-project ul li::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    outline: 2px solid var(--blue-color);
+    margin-right: 15px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.last-project ul li.done::before {
+    background-color: var(--blue-color);
+}
+
+.last-project ul li.current::before {
+    animation: color-fade 0.8s infinite alternate;
+    -webkit-animation: color-fade 0.8s infinite alternate;
+}
+
+.last-project .lanuch-icon {
+    position: absolute;
+    width: 160px;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+}
+
+/*End Last Project*/
+
+
+/*Start Reminders*/
+.reminders ul li>span {
+    width: 15px;
+    height: 15px;
+}
+
+.reminders ul li .blue {
+    border-left: 2px solid var(--blue-color);
+}
+
+.reminders ul li .green {
+    border-left: 2px solid var(--green-color);
+}
+
+.reminders ul li .orange {
+    border-left: 2px solid var(--orange-color);
+}
+
+.reminders ul li .red {
+    border-left: 2px solid var(--red-color);
+}
+
+/*End Reminders*/
+
+/*Start Last Post*/
+.last-post .avatar {
+    width: 48px;
+    height: 48px
+}
+
+.last-post .post-content {
+    line-height: 2;
+    min-height: 140px;
+    text-transform: capitalize;
+}
+
+/*End Last Post*/
+
+/*Start Social Media*/
+.social-media .box {
+    padding-left: 70px;
+}
+
+.social-media .box i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 52px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.social-media .box i:hover {
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+}
+
+.social-media .facebook {
+    background-color: rgb(24 119 242 / 20%);
+    color: #1877f2;
+}
+
+.social-media .facebook i,
+.social-media .facebook a {
+    background-color: #1877f2;
+}
+
+.social-media .linkedin {
+    background-color: rgb(0 119 181 / 20%);
+    color: #0077b5;
+}
+
+.social-media .linkedin i,
+.social-media .linkedin a {
+    background-color: #0077b5;
+}
+
+.social-media .youtube {
+    background-color: rgb(255 0 0 / 20%);
+    color: #ff0000;
+}
+
+.social-media .youtube i,
+.social-media .youtube a {
+    background-color: #ff0000;
+}
+
+.social-media .twitter {
+    background-color: rgb(29 161 242 / 20%);
+    color: #1da1f2;
+}
+
+.social-media .twitter i,
+.social-media .twitter a {
+    background-color: #1da1f2;
+}
+
+/*End Social Media*/
+
+/* Start Projects Table */
+.projects .responsive-table {
+    overflow-x: auto;
+}
+
+.projects table {
+    min-width: 1000px;
+    border-spacing: 0;
+}
+
+.projects thead td {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+.projects table td {
+    padding: 15px;
+}
+
+.projects tbody td {
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    transition: var(--main-transition-time);
+    -webkit-transition: var(--main-transition-time);
+    -moz-transition: var(--main-transition-time);
+    -ms-transition: var(--main-transition-time);
+    -o-transition: var(--main-transition-time);
+}
+
+.projects table tbody tr td:last-child {
+    border-right: 1px solid #eee;
+}
+
+.projects table img {
+    width: 32px;
+    height: 32px;
+    padding: 2px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.projects table img:not(:first-child) {
+    margin-left: -20px;
+}
+
+.projects tbody tr:hover td {
+    background-color: #faf7f7;
+}
+/* End Projects Table */
+
+/* End Dashboard Page*/

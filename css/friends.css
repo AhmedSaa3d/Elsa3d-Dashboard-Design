@@ -1,0 +1,47 @@
+/*Start Friends Page*/
+.friends-page {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.friends-page .contact {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.friends-page .contact i {
+    color: #666;
+    cursor: pointer;
+}
+
+.friends-page .contact i:hover {
+    color: white;
+    background-color: var(--blue-color);
+}
+
+.friends-page .icons i:hover {
+    color: var(--blue-color);
+}
+
+.friends-page .friend .icons .vip {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 40px;
+    opacity: 0.2;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.friends-page .friend .icons .vip:hover {
+    opacity: 0.7;
+}
+
+.friends-page .friend .info>div a:last-of-type:hover {
+    background-color: var(--red-color);
+}
+
+/*End Friends Page*/

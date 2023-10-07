@@ -9,3 +9,11 @@
 
 # Site ScreenShot :
 ![](SiteScreenShoot/Dashboard.png)
+![](SiteScreenShoot/Settings.png)
+![](SiteScreenShoot/Projects.png)
+![](SiteScreenShoot/Courses.png)
+![](SiteScreenShoot/Friends.png)
+![](SiteScreenShoot/Files.png)
+![](SiteScreenShoot/Plans.png)
+![](SiteScreenShoot/Profile.png)
+
